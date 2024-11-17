@@ -1,8 +1,10 @@
-const date1= new Date(2024,9,12);
+const date1= new Date();
 const options={
-    year:'numeric',
-    month:'long',
-    day:'numeric',
-};
+    year:"numeric",
+    month:"long",
+    day:"numeric",
+}
 
-console.log(date1.toLocaleDateString(undefined,options));
+
+console.log(new Intl.DateTimeFormat("japanese",options).format(date1));
+
