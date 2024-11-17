@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    background-color: #ffffff;
+}
+p{
+  font-size: 18px;
+}
+body{
+    width: 1440px;
+    margin: 10px;
+}
+#nav-pc{
+    margin: 0 auto;
+}
+#nav-pc>ul{
+    display: flex;
+    font-size:34px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#nav-pc>ul>li{
+    list-style: none;
+}
+#nav-pc a{
+    text-decoration: none;
+}
+#main-img{
+    margin: 0 auto;
+}
+#main-img img{
+    display: block;
+    width: 100%;
+}
+#main-pc{
+    margin: 0 auto;
+}
+.section-h3{
+    font-size: 34px;
+    text-align: center;
+}
+#myprofile-content{
+    display: flex;
+    width: 60%;
+    margin:0 auto
+    
+}
+#myprofile-img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius:142px 141px 141px 142px ;
+}
+#myprofile-read{
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-left: 190px;
+}
+#myprofile-read>h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+#aboutworks-contents{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+#aboutworks-contents-1,#aboutworks-contents-2,#aboutworks-contents-3{
+    width: 100%;
+}
+#aboutworks-contents-2,#aboutworks-contents-3{
+    margin-left: 20px;
+}
+.aboutworks-contents-img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.aboutworks-contents-read p{
+    margin: 0;
+}
+footer{
+    text-align: center;
+    margin-top:100px ;
+}
+/* スマホ用 */
+@media screen and (max-width:767px) {
+    body{
+        max-width:767px ;
+    }
+    #main-img{
+        width: 100%;
+        margin:0;
+    }
+    #myprofile-content{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    #myprofile-img{
+        width: 90%;
+        border-radius: 50%;
+        padding: 40px;
+    }
+    #myprofile-read{
+        width: 100%;
+        padding-left:120px;
+        list-style: outside;
+        font-size: 1.7rem;
+
+    }
+    #myprofile-read>h3{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    #aboutworks-contents{
+        display: block;
+        width: 100%;
+    }
+    #aboutworks-contents-1,#aboutworks-contents-2,#aboutworks-contents-3{
+        margin: 0;
+        padding: 20px;
+    }
+    .aboutworks-contents-read{
+        text-align: center;
+
+    }
+    .section-h3{
+        font-size: 38px;
+    }
+    .aboutworks-contents-read>p{
+        font-size: 2rem;
+    }
+
+}
